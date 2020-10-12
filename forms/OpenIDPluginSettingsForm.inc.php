@@ -35,9 +35,11 @@ class OpenIDPluginSettingsForm extends Form
 		"google" => ["configUrl" => "https://accounts.google.com/.well-known/openid-configuration"],
 		"microsoft" => ["configUrl" => "https://login.windows.net/common/.well-known/openid-configuration"],
 		"apple" => ["configUrl" => "https://appleid.apple.com/.well-known/openid-configuration"],
+		"orcid" => ["configUrl" => "https://orcid.org/.well-known/openid-configuration"],
+		"yahoo" => ["configUrl" => "https://api.login.yahoo.com/.well-known/openid-configuration"],
 	];
 
-	private $plugin;
+	var $plugin;
 
 	/**
 	 * OpenIDPluginSettingsForm constructor.
@@ -57,8 +59,7 @@ class OpenIDPluginSettingsForm extends Form
 	 */
 	function initData()
 	{
-		$request = Application::get()->getRequest();
-		$contextId = ($request->getContext() == null) ? 0 : $request->getContext()->getId();
+		$contextId = (Application::getRequest()->getContext() == null) ? 0 : Application::getRequest()->getContext()->getId();
 		$settingsJson = $this->plugin->getSetting($contextId, 'openIDSettings');
 		$settings = json_decode($settingsJson, true);
 		if (isset($settings)) {
@@ -116,7 +117,7 @@ class OpenIDPluginSettingsForm extends Form
 	 */
 	function execute(...$functionArgs)
 	{
-		$request = Application::get()->getRequest();
+		$request = Application::getRequest();
 		$contextId = ($request->getContext() == null) ? 0 : $request->getContext()->getId();
 		$providerList = $this->getData('provider');
 		$providerListResult = $this->_createProviderList($providerList);
@@ -147,7 +148,7 @@ class OpenIDPluginSettingsForm extends Form
 	 * @param $providerList
 	 * @return array complete list of enabled provider including all necessary endpoint URL's
 	 */
-	private function _createProviderList($providerList)
+	private function _createProviderList($providerList): array
 	{
 		$providerListResult = array();
 		if (isset($providerList) && is_array($providerList)) {

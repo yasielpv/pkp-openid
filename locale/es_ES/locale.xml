@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "./././././lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/generic/openid/locale/es.ES/locale.xml
+  *
+  * Copyright (c) 2015-2019 University of Pittsburgh
+  * Copyright (c) 2014-2019 Simon Fraser University
+  * Copyright (c) 2003-2019 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * ORCID Profile plugin localization messages
+  -->
+
+<locale name="es_ES" full.name="Español (España)">
+    <message key="plugins.generic.openid.name">Complemento de autenticación OpenID</message>
+    <message key="plugins.generic.openid.description">Este complemento permite el inicio de sesión y el registro a través del proveedor OpenID (por ejemplo, Keycloak)</message>
+    <message key="plugins.generic.openid.step2.title">Registrar o conectar cuenta</message>
+    <message key="plugins.generic.openid.step2.headline">Registrar o conectar cuenta</message>
+    <message key="plugins.generic.openid.step2.help"><![CDATA[No se encontró ninguna cuenta que esté vinculada a sus datos de OpenID. <br /> Hay dos opciones disponibles: <ul> <li> Si aún no tiene una cuenta para esta revista, proporcione sus datos y complete el registro. </ li> <li> Si ya tiene una cuenta para esta revista, inicie sesión con sus datos de usuario anterior. Sus cuentas se conectarán automáticamente y solo tendrá que autenticarse a través de OpenID en el futuro.</li></ul>]]></message>
+    <message key="plugins.generic.openid.step2.choice"><![CDATA[Por favor <span id="showRegisterForm" class="step2-choice-links">complete el registro</span> o <span id="showLoginForm" class="step2-choice-links">ingrese con una cuenta existente</span>.]]></message>
+    <message key="plugins.generic.openid.step2.complete">Verifique los detalles registrados y agregue los que faltan</message>
+    <message key="plugins.generic.openid.step2.complete.btn">Registro completo</message>
+    <message key="plugins.generic.openid.step2.connect">Ingrese las credenciales de inicio de sesión anteriores</message>
+    <message key="plugins.generic.openid.step2.connect.username">Nombre de usuario o correo electrónico</message>
+    <message key="plugins.generic.openid.step2.connect.btn">Iniciar sesión y conectar cuentas</message>
+    <message key="plugins.generic.openid.form.error.username.required">Se requiere un nombre de usuario.</message>
+    <message key="plugins.generic.openid.form.error.usernameExists">El nombre de usuario seleccionado ya está siendo utilizado por otro usuario.</message>
+    <message key="plugins.generic.openid.form.error.givenName.required">Se requiere un nombre.</message>
+    <message key="plugins.generic.openid.form.error.familyName.required">Se requiere un apellido.</message>
+    <message key="plugins.generic.openid.form.error.country.required">Se requiere un país.</message>
+    <message key="plugins.generic.openid.form.error.affiliation.required">Se requiere una afiliación.</message>
+    <message key="plugins.generic.openid.form.error.email.required">Se requiere un correo electrónico.</message>
+    <message key="plugins.generic.openid.form.error.emailExists">El correo electrónico seleccionado ya está en uso. Intente iniciar sesión en esta cuenta.</message>
+    <message key="plugins.generic.openid.form.error.privacyConsent.required">Debe aceptar los términos de la declaración de privacidad.</message>
+    <message key="plugins.generic.openid.form.error.usernameOrEmail.required">Se requiere un nombre de usuario o correo electrónico.</message>
+    <message key="plugins.generic.openid.form.error.password.required">Se requiere una contraseña.</message>
+    <message key="plugins.generic.openid.form.error.user.not.found">No se encontró ningún usuario que coincida con sus credenciales.</message>
+    <message key="plugins.generic.openid.form.error.invalid.credentials">La contraseña es incorrecta.</message>
+    <message key="plugins.generic.openid.settings.error"><![CDATA[<strong>Configuración incorrecta del complemento OpenID.</strong><br />¡No hay ningún proveedor OpenID configurado!<br />Póngase en contacto con el soporte para informar esto.]]></message>
+    <message key="plugins.generic.openid.settings.openid.head">Provedor OpenId:</message>
+    <message key="plugins.generic.openid.settings.openid.desc">Ingrese la siguiente información de acuerdo con su proveedor de OpenID.</message>
+    <message key="plugins.generic.openid.settings.custom.enable">Proveedor OpenID personalizado</message>
+    <message key="plugins.generic.openid.settings.custom.desc">Si desea utilizar un proveedor de OpenID Connect personalizado (por ejemplo, un servidor Keycloak autohospedado), debe proporcionar la URL al punto final de configuración de OpenID y las credenciales del cliente.</message>
+    <message key="plugins.generic.openid.settings.btn.settings">Configuración personalizada del botón de inicio de sesión</message>
+    <message key="plugins.generic.openid.settings.provider.settings">Credenciales de acceso</message>
+    <message key="plugins.generic.openid.settings.btnImg.desc">Ingrese una URL a una imagen (tamaño: 46x41) que desea mostrar en el botón de inicio de sesión; de lo contrario, se muestra el logotipo de OpenID</message>
+    <message key="plugins.generic.openid.settings.btnTxt.desc">Introduzca un texto que desee mostrar en el botón de inicio de sesión.</message>
+    <message key="plugins.generic.openid.settings.google.enable">Google OpenID Connect</message>
+    <message key="plugins.generic.openid.settings.google.desc"><![CDATA[Tienes que crear un cliente OpenID Connect en el <a href="https://console.developers.google.com/apis/credentials" target=".blank" rel="noopener">Consola de desarrollador de Google</a> para utilizar Google como proveedor de OpenID Connect. Se puede encontrar un tutorial <a href="https://developers.google.com/identity/protocols/oauth2/openid-connect" target=".blank" rel="noopener">aquí</a>. Utilice esta URL de redireccionamiento:]]></message>
+    <message key="plugins.generic.openid.settings.microsoft.enable">Microsoft Azure Active Directory</message>
+    <message key="plugins.generic.openid.settings.microsoft.desc"><![CDATA[Tienes que configurar tu App Service en el <a href="https://portal.azure.com/#blade/Microsoft.AAD.IAM/ActiveDirectoryMenuBlade/Overview" target=".blank" rel="noopener">portal de Azure</a> (vaya a "Registros de aplicaciones" después de iniciar sesión) para usar el inicio de sesión de Azure AD. Se puede encontrar un tutorial <a href="https://docs.microsoft.com/en-us/azure/app-service/configure-authentication-provider-aad" target=".blank" rel="noopener">aquí</a>. Utilice esta URL de redireccionamiento:]]></message>
+    <message key="plugins.generic.openid.settings.apple.enable">Apple ID</message>
+    <message key="plugins.generic.openid.settings.apple.desc"><![CDATA[Se puede encontrar un tutorial sobre cómo configurar la ID de Apple <a href="https://developer.apple.com/documentation/authenticationservices" target=".blank" rel="noopener">aquí</a>. Utilice esta URL de redireccionamiento:]]></message>
+    <message key="plugins.generic.openid.settings.yahoo.enable">Yahoo ID</message>
+    <message key="plugins.generic.openid.settings.yahoo.desc"><![CDATA[Se puede encontrar un tutorial sobre cómo configurar la ID de Yahoo <a href="https://developer.yahoo.com/oauth2/guide/openid_connect/" target=".blank" rel="noopener">aquí</a>. Utilice esta URL de redireccionamiento:]]></message>
+	<message key="plugins.generic.openid.settings.orcid.enable">Orcid ID</message>
+    <message key="plugins.generic.openid.settings.orcid.desc"><![CDATA[Se puede encontrar un tutorial sobre cómo configurar la ID de Orcid <a href="https://members.orcid.org/api/integrate" target=".blank" rel="noopener">aquí</a>. Utilice esta URL de redireccionamiento:]]></message>
+	<message key="plugins.generic.openid.settings.configUrl">URL del provedor OpenID</message>
+    <message key="plugins.generic.openid.settings.configUrl.desc"><![CDATA[Ingrese la URL de configuración de su proveedor de OpenID.<strong> La URL debe terminar con ".well-known/openid-configuration" (por ejemplo: "https://sso.example.com/auth/realms/master/.well-known/openid-configuration").</strong>.]]></message>
+    <message key="plugins.generic.openid.settings.clientId">Identificador de cliente</message>
+    <message key="plugins.generic.openid.settings.clientId.desc">Introduzca su ID de cliente.</message>
+    <message key="plugins.generic.openid.settings.clientSecret">Código cliente</message>
+    <message key="plugins.generic.openid.settings.clientSecret.desc">Ingrese su código de cliente.</message>
+    <message key="plugins.generic.openid.settings.features.head">Funciones de complemento avanzadas</message>
+    <message key="plugins.generic.openid.settings.features.desc">Las siguientes entradas son solo para funciones avanzadas de complementos. No son importantes para la conexión con el proveedor OpenID.</message>
+    <message key="plugins.generic.openid.settings.legacyLogin">Inicio de sesión heredado</message>
+    <message key="plugins.generic.openid.settings.legacyLogin.check">Habilitar el inicio de sesión heredado</message>
+    <message key="plugins.generic.openid.settings.legacyLogin.desc">Habilite esta opción si desea utilizar el inicio de sesión OJS además del inicio de sesión OpenID.</message>
+    <message key="plugins.generic.openid.settings.hashSecret">Encriptar/Desencriptar código</message>
+    <message key="plugins.generic.openid.settings.hashSecret.desc">Si desea cifrar la información de OpenID como el identificador de OpenID en el código HTML y desea utilizar la siguiente función para la generación automática de API-KEY, debe ingresar un secreto aquí. Puedes elegir tu secreto libremente. ¡Cuantos más caracteres, más seguro!</message>
+    <message key="plugins.generic.openid.settings.generateAPIKey">Clave API automatizada</message>
+    <message key="plugins.generic.openid.settings.generateAPIKey.check">Habilitar la generación automática de claves API</message>
+    <message key="plugins.generic.openid.settings.generateAPIKey.desc">Este complemento puede generar una clave encriptando el identificador OpenID con <strong>el código que ingresaste antes</strong>. Esta clave se volverá a cifrar con un código que debe especificarse en la configuración de OJS. Esto debe ser lo suficientemente seguro.</message>
+    <message key="plugins.generic.openid.error.openid.connect.desc.key"><![CDATA[<strong>Se produjo un error al verificar sus datos.</strong><br />Es posible que el servicio no esté disponible en este momento.<br />Inténtelo de nuevo o <a href="mailto:{$supportEmail}">contacta con el soporte técnico</a> si el problema persiste.]]></message>
+    <message key="plugins.generic.openid.error.openid.connect.desc.data"><![CDATA[<strong>Se produjo un error al recibir sus datos del proveedor de OpenId.</strong><br />Es posible que el servicio no esté disponible en este momento.<br />Inténtelo de nuevo o <a href="mailto:{$supportEmail}">contacta con el soporte técnico</a> si el problema persiste.]]></message>
+    <message key="plugins.generic.openid.error.openid.cert.desc"><![CDATA[<strong>Se produjo un error durante la validación y extracción de sus datos.</strong><br />Es posible que el servicio no esté disponible en este momento.<br />Inténtelo de nuevo o <a href="mailto:{$supportEmail}">contacta con el soporte técnico</a> si el problema persiste.]]></message>
+    <message key="plugins.generic.openid.error.openid.disabled.without"><![CDATA[<strong>Esta cuenta está deshabilitada sin ningún motivo específico.</strong><br />Por favor <a href="mailto:{$supportEmail}">contacta con el soporte técnico</a> para habilitar esta cuenta.]]></message>
+    <message key="plugins.generic.openid.error.openid.disabled.with"><![CDATA[<strong>Esta cuenta está inhabilitada por el siguiente motivo:</strong>]]></message>
+    <message key="plugins.generic.openid.error.legacy.link"><![CDATA[El administrador de la revista o el personal de soporte pueden iniciar sesión a través de este <a href=\"{$legacyLoginUrl}\">enlace</a> para solucionar este problema.]]></message>
+    <message key="plugins.generic.openid.select.provider">Ingresa o Registro</message>
+    <message key="plugins.generic.openid.select.legacy">Inicie sesión con su cuenta de {$journalName}</message>
+    <message key="plugins.generic.openid.select.provider.help">Inicie sesión o regístrese con:</message>
+    <message key="plugins.generic.openid.select.provider.custom">Iniciar sesión con un provedor personalizado</message>
+    <message key="plugins.generic.openid.select.provider.google">Iniciar sesión con Google</message>
+    <message key="plugins.generic.openid.select.provider.microsoft">Iniciar sesión con Microsoft</message>
+    <message key="plugins.generic.openid.select.provider.apple">Iniciar sesión con Apple</message>
+	<message key="plugins.generic.openid.select.provider.yahoo">Iniciar sesión con Yahoo</message>
+	<message key="plugins.generic.openid.select.provider.orcid">Iniciar sesión con ORCID</message>
+</locale>
